@@ -1,0 +1,32 @@
+@model MvcMyOwn.Models.Customer
+@{
+    ViewBag.Title = "LogIn";
+}
+@*new login in registration conroller*@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<link href="~/Content/my.css" rel="stylesheet" type="text/css"/>
+</head>
+<body style="background-color:lightpink">
+<form action="/Registration/loginfun" method="post"> 
+<fieldset>
+<legend style="background-color:#FF0099; border:groove black 2px; font-size:30px">Login
+</legend>
+<div style="padding:2% 4% 5% 7%"> 
+    <font size="2">
+        Enter First Name:<br /><input type="text" /><br />
+        <div style="margin-top:2%">Enter Password: <br /><input type="password" /><br /></div> <br />
+        <div><input type="submit" name="login" value="Login" style="background-color:#FF6699; width:60px ;height:50px" /></div>
+    </font></div>
+
+</fieldset>
+</form>
+
+<div>
+<img src="~/Images/634861502048934266.jpg" alt="image" width="1500px" height="300px"/>
+</div>
+</body>
+</html>

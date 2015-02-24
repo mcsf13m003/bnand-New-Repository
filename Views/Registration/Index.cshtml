@@ -1,0 +1,29 @@
+﻿@model List<MvcMyOwn.Models.Customer>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>List Of Students</h2>
+<table>
+    <tr>
+        <td>Id</td> 
+        <td>FirstName</td>
+        <td>LastName</td>
+        <td>EmailId</td>
+        <td>Password</td>
+    </tr>
+  
+        @foreach (var s in Model)
+        {
+            <tr>
+                <td>@s.Id</td>
+                <td>@s.FirstName</td>
+                <td>@s.LastName</td>
+                <td>@s.EmailId</td>
+                <td>@s.Password</td>
+                <td><a  href="/registration/update/@s.Id"> update </a></td>
+                <td><a href="/registration/delete/@s.Id"> delete </a></td>
+            </tr>
+            
+        }
+</table>

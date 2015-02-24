@@ -1,0 +1,114 @@
+﻿@*@{
+    ViewBag.Title = "_Layout";
+}
+
+<h2>_Layout</h2>*@
+<!DOCTYPE html>
+<html>
+<head> 
+    <link href="~/Content/my.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="~/Scripts/mm.js"></script>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="~/Scripts/bootstrap.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <header>
+        <div id="set">
+            <div class="menu">
+                <ul class="menu-list">
+                    <li>
+                        <a href="#" class="hyper-link" style="margin-left:10px; background-color:#ff66ff">
+                            well_come--->
+                            <span class="box-animation">
+                                <span class="front" style="background-color:rgb(242,160,196); width:220px; font-size:25px; font-family:cooper black; color:rgb(152,49,120); padding:4px 5px 2px 2px">online gift shop</span>
+
+                            </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="~/home/index" class="hyper-link" style="margin-left:70px">
+                            home
+                            <span class="box-animation">
+                                <span class="front">home</span>
+                                <span class="back">home</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/home/cards" class="hyper-link" style="margin-left:10px">
+                            cards
+                            <span class="box-animation">
+                                <span class="front">cards</span>
+                                <span class="back">cards</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/home/gifts" class="hyper-link" style="margin-left:10px">
+                            gift
+                            <span class="box-animation">
+                                <span class="front">gift</span>
+                                <span class="back">gift</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/home/giftpapers" class="hyper-link" style="margin-left:10px">
+                            gift paper
+                            <span class="box-animation">
+                                <span class="front">gift paper</span>
+                                <span class="back">gift paper</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/registration/signup" class="hyper-link" style="margin-left:10px">
+                            sign up
+                            <span class="box-animation">
+                                <span class="front">sign up</span>
+                                <span class="back">sign up</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/registration/login" class="hyper-link" style="margin-left:10px">
+                            log in
+                            <span class="box-animation">
+                                <span class="front">log in</span>
+                                <span class="back">log in</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/home/contactus" class="hyper-link" style="margin-left:10px">
+                            contact us
+                            <span class="box-animation">
+                                <span class="front">contact us</span>
+                                <span class="back">contact us</span>
+                            </span>
+                        </a>
+                    </li>
+
+
+                </ul>
+
+
+            </div>
+        </div>
+    </header>
+    @RenderBody()
+    <footer class="modal-footer">
+        <div>
+            <img src="~/images/634861502048934266.jpg" width="1500px" height="300px" />
+        </div>
+    </footer>
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

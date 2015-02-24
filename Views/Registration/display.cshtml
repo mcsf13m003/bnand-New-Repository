@@ -1,0 +1,10 @@
+﻿@model List<MvcMyOwn.Models.Customer>
+@{
+    ViewBag.Title = "display";
+}
+
+<h2>display</h2>
+@foreach (var i in Model)
+{
+    <img src="@i.Picture" height="300" width="275" alt="" />
+}
